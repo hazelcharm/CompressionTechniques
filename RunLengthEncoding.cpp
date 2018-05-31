@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : Trial3.cpp
+// Name        : RunLengthEncoding.cpp
 // Author      : Srilakshmi Sruthi Pasumarthy
 // Description : Run-Length Encoding
 //============================================================================
