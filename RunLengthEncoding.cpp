@@ -1,8 +1,6 @@
 //============================================================================
 // Name        : Trial3.cpp
-// Author      : Sruthi Pasumarthy
-// Version     :
-// Copyright   : Your copyright notice
+// Author      : Srilakshmi Sruthi Pasumarthy
 // Description : Run-Length Encoding
 //============================================================================
 
@@ -66,45 +64,8 @@ void runLength(int index,string prev, short int fCounter)
 
 
 int main() {
-	//cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	//string str = "Test|Test|Test|Test|Test|Trial|Trial|Trial|Sample|Sample|Sample|Sample";
-	//vector<string> input = {"Test","Test","Test","Test","Test","Trial","Trial","Trial","Sample","Sample","Sample","Sample"};
-	//short int freqCounter = 0;
-	//vector<Compressed> compressedObjs;
+
 	string prev = input.front();
-
-	/*for(auto i = input.begin(); i != input.end(); i++ )
-	{
-		string current = *i;
-		if(current.compare(prev) != 0)
-		{
-			Compressed obj(freqCounter,prev);
-			compressedObjs.push_back(obj);
-			freqCounter = 1;
-			prev = current;
-		}
-		else
-		{
-			++freqCounter;
-
-		}
-		if(next(i) == input.end())
-		{
-			Compressed obj(freqCounter,prev);
-			compressedObjs.push_back(obj);
-		}
-
-
-	}
-
-	if(compressedObjs.size() > 0)
-	{
-		cout << "Frequency\t" << "Data"<< endl;
-	}
-
-	for(Compressed c : compressedObjs){
-		cout<< c.getFrequency() << "\t" << c.getData() << endl;
-	}*/
 	runLength(0,prev,0);
 
 	for(Compressed c : cObjs){
